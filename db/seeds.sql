@@ -1,12 +1,12 @@
-USE cms;
-
-INSERT into department VALUES 
+INSERT INTO department (name)
+VALUES 
 ("Sales"),
 ("Marketing"),
 ("HR"),
 ("IT");
 
-INSERT into role (title, salary, department_id) VALUES
+INSERT INTO role (title, salary, department_id) 
+VALUES
 ("Sales Manager", 100000, 1),
 ("Marketing Manager", 100000, 2),
 ("HR Manager", 100000, 3),
@@ -16,7 +16,8 @@ INSERT into role (title, salary, department_id) VALUES
 ("HR Assistant", 65000, 3),
 ("Engineer", 90000, 4);
 
-INSERT into employee (first_name, last_name, role, manager_id) VALUES
+INSERT INTO employee (first_name, last_name, role_id, manager_id) 
+VALUES
 ("Charlie", "Villareal", 1, NULL),
 ("Karen", "Beltran", 2, NULL),
 ("Lizbeth", "Prieto", 3, NULL),
